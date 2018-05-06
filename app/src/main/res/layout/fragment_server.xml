@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ClubToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70dp"
+        android:background="@color/royalblue"
+        android:paddingTop="@dimen/_20dp"
+        app:title="@null">
+
+        <com.hiretaxi.view.BaseToolbar
+            android:id="@+id/toolbarView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            app:headerbackground="@color/royalblue"
+            app:left_visibity="false"
+            app:right_visibity="false"
+            app:tvCenterContent="订单" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/int_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_50dp"
+        android:layout_marginRight="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/int_rd0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/indent_rd0"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textColor="@drawable/indent_text_selector" />
+
+        <RadioButton
+            android:id="@+id/int_rd1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/indent_rd1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="已完成订单"
+            android:textColor="@drawable/indent_text_selector" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/int_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_10dp" />
+
+</LinearLayout>

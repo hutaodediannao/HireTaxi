@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <Button
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:text="微信登录"
+        android:layout_centerHorizontal="true"
+        android:background="@color/royalblue"
+        android:textSize="30sp"
+        android:drawablePadding="@dimen/_20dp"
+        android:paddingRight="@dimen/_60dp"
+        android:paddingLeft="@dimen/_60dp"
+        android:drawableLeft="@mipmap/wx"
+        android:textColor="@color/white"
+        android:onClick="startLogin"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_login"
+        android:text="账号太多记不住微信一键登录"
+        android:layout_centerHorizontal="true"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_20dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_150dp"
+        android:layout_marginRight="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_40dp">
+
+        <ImageView
+            android:layout_width="@dimen/_55dp"
+            android:layout_height="@dimen/_55dp"
+            android:src="@mipmap/appicon"
+            android:layout_gravity="center|left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="@dimen/_60dp"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="爆米花订车"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

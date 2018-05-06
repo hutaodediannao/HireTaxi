@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:hint="姓名:"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="姓名:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_wc_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="性别:"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/etSex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="电话:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etPhonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_ring_volume_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="紧急电话:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etSosPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_featured_play_list_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="身份证号码:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etIdCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_featured_play_list_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="驾驶证:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etCarAuthen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_picture_in_picture_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="车牌号:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etCarNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="车险:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etCarInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_local_car_wash_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingLeft="@dimen/_20dp"
+                android:singleLine="true"
+                android:text="车况:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etCarStatu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCarContent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_20dp"
+                android:text="车型:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/spinnerCarType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <include layout="@layout/line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">爆米花专车</string>
+
+    <string name="attention">
+         1:上传本人身份证\n
+        2:驾驶证，行驶证\n
+        3:车辆前后45度角(车牌)\n
+        4:保险单原件拍照
+    </string>
+
+    <array name="array">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+    </array>
+
+    <string name="xieyi">BAOMIHUA-TAXI  版权所有\nCopyright@2013-2017 nong nan\nAll Rights Reserved</string>
+
+
+</resources>

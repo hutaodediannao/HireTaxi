@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_gravity="center"
+    android:padding="5dp"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1">
+
+    <com.hiretaxi.view.CustomImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center|top"
+        android:src="@mipmap/appicon" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:padding="@dimen/_10dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add_black_24dp" />
+</FrameLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:id="@+id/tvStartLocation"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:gravity="left|center"
+                        android:text="起点：" />
+
+                    <TextView
+                        android:id="@+id/tvEndLocation"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tvStartLocation"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:gravity="left|center"
+                        android:text="终点：" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_20dp"
+                        android:text="价格："
+                        android:textColor="@color/red"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/line" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:text="基本信息" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignEnd="@+id/textView4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/textView4"
+                        android:layout_below="@+id/textView4"
+                        android:gravity="left|center"
+                        android:text="日期：" />
+
+                    <TextView
+                        android:id="@+id/tvCarIdCard"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignEnd="@+id/tvDate"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/tvDate"
+                        android:layout_below="@+id/tvDate"
+                        android:gravity="left|center"
+                        android:text="车牌号：" />
+
+                    <TextView
+                        android:id="@+id/tvPerson"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignEnd="@+id/tvCarIdCard"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/tvCarIdCard"
+                        android:layout_below="@+id/tvCarIdCard"
+                        android:gravity="left|center"
+                        android:text="乘车人：" />
+
+                    <TextView
+                        android:id="@+id/tvCarType"
+                        style="@style/BaseTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_alignEnd="@+id/tvCarIdCard"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/tvCarIdCard"
+                        android:layout_below="@+id/tvPerson"
+                        android:gravity="left|center"
+                        android:text="车型：" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_weight="1"
+                    android:minHeight="@dimen/_150dp"
+                    android:minWidth="@dimen/_200dp"
+                    android:layout_marginBottom="@dimen/_100dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/no_picture" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ident_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCall"
+            style="@style/BaseTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_selector"
+            android:text="电话"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnReceive"
+            style="@style/BaseTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_selector"
+            android:text="接单"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_over_ident"
+            style="@style/BaseTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_selector"
+            android:onClick="overIndent"
+            android:text="完成此订单"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</FrameLayout>

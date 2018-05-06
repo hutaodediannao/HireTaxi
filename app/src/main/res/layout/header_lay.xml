@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="@dimen/_60dp"
+                android:layout_height="@dimen/_60dp"
+                android:layout_gravity="center|top"
+                android:src="@mipmap/appicon" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="@dimen/_10dp"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:text="么么哒"
+                android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_dowload_progress"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/_25dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="0%"/>
+    </FrameLayout>
+</FrameLayout>

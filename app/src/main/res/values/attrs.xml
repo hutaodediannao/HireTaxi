@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义标题头的控件-->
+    <declare-styleable name="HeaderView">
+        <attr name="ivLeftSrc" format="reference"/>
+        <attr name="ivRightSrc" format="reference|integer"/>
+        <attr name="tvCenterContent" format="string|reference" />
+        <attr name="headerbackground" format="reference|color"/>
+        <attr name="left_visibity" format="boolean"/>
+        <attr name="right_visibity" format="boolean"/>
+    </declare-styleable>
+
+    <!--自定义欢迎界面圆点-->
+    <declare-styleable name="MySplashView">
+        <attr name="circleSplashCount" format="integer" />
+        <attr name="circleSplashColor" format="color|reference" />
+        <attr name="circleSplashRadius" format="integer|dimension" />
+        <attr name="circleSplashDisplay" format="integer|dimension" />
+    </declare-styleable>
+
+</resources>

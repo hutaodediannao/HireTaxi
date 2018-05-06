@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/NormalTextStyle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:text="认证要求"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/NormalTextStyle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:text="@string/attention"
+                    android:textColor="@color/dimgrey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:gravity="center"
+                    android:text="示例图片要求"
+                    android:textColor="@color/sandybrown"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="@dimen/_5dp"
+                    app:columnCount="3"
+                    app:orientation="horizontal"
+                    app:rowCount="2">
+
+                    <include
+                        android:id="@+id/item0"
+                        layout="@layout/grid_item_layout" />
+
+                    <include
+                        android:id="@+id/item1"
+                        layout="@layout/grid_item_layout" />
+
+                    <include
+                        android:id="@+id/item2"
+                        layout="@layout/grid_item_layout" />
+
+                    <include
+                        android:id="@+id/item3"
+                        layout="@layout/grid_item_layout" />
+
+                    <include
+                        android:id="@+id/item4"
+                        layout="@layout/grid_item_layout" />
+
+                    <include
+                        android:id="@+id/item5"
+                        layout="@layout/grid_item_layout" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/pregressbarLay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_100dp"
+            android:layout_marginLeft="@dimen/_50dp"
+            android:layout_marginRight="@dimen/_50dp">
+
+            <TextView
+                android:id="@+id/tv_dowload_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:text="下载进度为:0%"
+                android:textColor="@color/red" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom"
+                android:progressDrawable="@drawable/progressbar_style" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btn_submit"
+            style="@style/BaseTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:background="@drawable/shape_selector"
+            android:onClick="uploadImgArray"
+            android:text="确认提交"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/tv_attention"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/atten_cross"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+</FrameLayout>

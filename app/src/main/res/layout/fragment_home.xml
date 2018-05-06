@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ClubToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70dp"
+        android:background="@color/royalblue"
+        android:paddingTop="@dimen/_20dp"
+        android:visibility="gone"
+        app:title="@null">
+
+        <com.hiretaxi.view.BaseToolbar
+            android:id="@+id/toolbarView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            app:headerbackground="@color/royalblue"
+            app:left_visibity="false"
+            app:right_visibity="false"
+            app:tvCenterContent="订单列表" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <!--android:layout_marginTop="@dimen/_70dp"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:AutoPlayTime="3000"
+                app:pointsContainerBackground="#44AAAAAA"
+                app:pointsPosition="RIGHT"
+                app:tipTextColor="#FFFFFFFF"
+                app:tipTextSize="16.0sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                    android:id="@+id/swipeToLoadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/transparent"
+                    app:swipe_style="classic">
+
+                    <include layout="@layout/layout_twitter_header" />
+
+                    <com.hiretaxi.view.recyclerViewConfig.RefreashRecyclerView
+                        android:id="@id/swipe_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:clipToPadding="false" />
+
+                    <include layout="@layout/layout_classic_footer" />
+
+                </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/entryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_90dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="top|center"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/entry_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:text="空空如也"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="-70dp"
+            android:background="@color/transparent"
+            android:src="@drawable/top" />
+
+        <TextView
+            android:id="@+id/searchView"
+            style="@style/BaseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30dp"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_35dp"
+            android:background="@drawable/circle_range_ba"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_100dp"
+            android:paddingRight="@dimen/_100dp"
+            android:singleLine="true"
+            android:text="搜索更多:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

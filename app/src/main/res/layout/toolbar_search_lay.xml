@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/royalblue">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back" />
+
+    <FrameLayout
+        android:id="@+id/view_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_60dp"
+        android:layout_marginRight="@dimen/_60dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_search">
+
+        <ImageView
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:hint="输入搜索内容"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:textColorHint="@color/white"
+            android:paddingLeft="@dimen/_5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:visibility="gone"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/_8dp"
+            android:src="@drawable/delete" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:scaleType="center"
+        android:text="搜索"
+        android:textColor="@color/white"
+        style="@style/BaseTextStyle"/>
+
+
+</FrameLayout>

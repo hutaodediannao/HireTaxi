@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/no_picture"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="clamp"
+        app:riv_oval="false" />
+        <!--app:riv_border_width="1dp"-->
+        <!--app:riv_border_color="@color/transparent"-->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/BaseTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:maxLines="2"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_alignTop="@+id/ivHeader"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_toRightOf="@+id/ivHeader"
+        android:layout_toEndOf="@+id/ivHeader" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/BaseTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_toEndOf="@+id/ivHeader"
+        android:layout_toRightOf="@+id/ivHeader"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/BaseTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10dp"
+        android:gravity="left|center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dimgrey" />
+</RelativeLayout>

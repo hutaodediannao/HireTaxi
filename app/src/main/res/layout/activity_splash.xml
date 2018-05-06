@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hiretaxi.activity.SplashActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.hiretaxi.view.SplashView
+        android:id="@+id/splashView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80dp"
+        android:layout_gravity="bottom"
+        app:circleSplashCount="4"
+        app:circleSplashColor="@color/aqua"
+        app:circleSplashRadius="20"
+        app:circleSplashDisplay="100" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:onClick="startGon"
+        android:background="@drawable/shape_selector"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="-50dp"
+        android:text="开始体验"
+        style="@style/BaseTitleTextStyle"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_40dp" />
+
+</FrameLayout>
